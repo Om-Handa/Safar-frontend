@@ -6,7 +6,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 function Home() {
     return (
         <>
-            <div className="bg-[url(https://www.heritagedaily.com/wp-content/uploads/2017/05/16279740174_9d932bdf6d_k-scaled.jpg)] text-white rounded-l h-[80vh] md:h-screen bg-cover w-screen flexad flex-col gap-20 ">
+            <div style={{ backgroundImage: "url('https://www.heritagedaily.com/wp-content/uploads/2017/05/16279740174_9d932bdf6d_k-scaled.jpg')" }} className=" text-white rounded-l h-[80vh] md:h-screen bg-cover w-screen flexad flex-col gap-20 ">
                 <div className='flexad flex-col '>
                     <p className='text-6xl font-bold text-center'>WELCOME TO SAFAR</p>
                     <p className='text-2xl font-bold text-center' >EXPLORE INDIA WITH NO SUFFER</p>
