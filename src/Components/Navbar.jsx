@@ -17,13 +17,13 @@ const Navbar = () => {
                     
                     <div className='flex space-x-10'>
                         <ul className={`md:rounded-full gap-6 px-6 md:py-2 flexad flex-col md:flex-row absolute md:static md:bg-white/10 md:backdrop-blur-md top-full left-0 bg-amber-950 md:shadow-md w-full transition-all duration-300 md:text-lg text-xl ease-in-out overflow-hidden ${isOpen?"max-h-96 py-4 ":"max-h-0 md:max-h-none py-0 opacity-0 md:py-0 md:opacity-100"}`}>
-                            <NavLink to="/" onClick={()=>setisOpen(!isOpen)}><li>Home</li></NavLink>
-                            <HashLink smooth to="/#Tours" onClick={()=>setisOpen(!isOpen)}><li>Tour</li></HashLink>
-                            <HashLink smooth to="/#Services" onClick={()=>setisOpen(!isOpen)}><li>Services</li></HashLink>
-                            <NavLink to="/About" onClick={()=>setisOpen(!isOpen)}><li>About</li></NavLink>
-                            <NavLink to="/ContactUs" onClick={()=>setisOpen(!isOpen)}><li>Contact</li></NavLink>
-                            <NavLink to="/HotelData" onClick={()=>setisOpen(!isOpen)} className="md:hidden"><li>Hotels</li></NavLink>
-                            <NavLink to="/TrainData" onClick={()=>setisOpen(!isOpen)} className="md:hidden"><li>Trains</li></NavLink>
+                            <li><NavLink to="/" onClick={()=>setisOpen(!isOpen)}>Home</NavLink></li>
+                            <li><HashLink smooth to="/#Tours" onClick={()=>setisOpen(!isOpen)}>Tour</HashLink></li>
+                            <li><HashLink smooth to="/#Services" onClick={()=>setisOpen(!isOpen)}>Services</HashLink></li>
+                            <li><NavLink to="/About" onClick={()=>setisOpen(!isOpen)}>About</NavLink></li>
+                            <li><NavLink to="/ContactUs" onClick={()=>setisOpen(!isOpen)}>Contact</NavLink></li>
+                            <li><NavLink to="/HotelData" onClick={()=>setisOpen(!isOpen)} className="md:hidden">Hotels</NavLink></li>
+                            <li><NavLink to="/TrainData" onClick={()=>setisOpen(!isOpen)} className="md:hidden">Trains</NavLink></li>
                         </ul>
                     </div>
                     <NavLink to="/Login" className="bg-white text-black text-xl font-bold px-6 py-2 rounded-full"> Login </NavLink>
