@@ -1,0 +1,224 @@
+[
+  {
+    "state": "Delhi",
+    "cities": [
+
+      "New Delhi"
+
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "cities": [
+      "Jhansi",
+      "Varanasi",
+      "Lucknow",
+      "Agra",
+      "Ayodhya",
+      "Mathura",
+      "Sarnath",
+      "Prayagraj",
+      "Vrindavan"
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "cities": [
+      "Jaisalmer",
+      "Mount Abu",
+      "Udaipur",
+      "Alwar",
+      "Jaipur",
+      "Jodhpur",
+      "Chittorgarh"
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "cities": [
+      "Lonavala",
+      "Shirdi",
+      "Ratnagiri",
+      "Panchgani",
+      "Aurangabad",
+      "Mumbai",
+      "Nashik",
+      "Pune"
+    ]
+  },
+  {
+    "state": "Kerala",
+    "cities": [
+      "Wayanad",
+      "Alleppey",
+      "Thiruvananthapuram",
+      "Kumarakom",
+      "Kozhikode",
+      "Kochi",
+      "Thekkady",
+      "Munnar"
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "cities": [
+      "Thanjavur",
+      "Yercaud",
+      "Madurai",
+      "Chennai",
+      "Coimbatore",
+      "Ooty",
+      "Rameswaram",
+      "Kanyakumari"
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "cities": [
+      "Bengaluru",
+      "Shravanabelagola",
+      "Hampi",
+      "Mysore",
+      "Chikmagalur",
+      "Gokarna",
+      "Murudeshwar",
+      "Coorg"
+    ]
+  },
+  {
+    "state": "Goa",
+    "cities": [
+      "Panaji",
+      "Calangute",
+      "Colva",
+      "Margao",
+      "Candolim",
+      "Anjuna",
+      "Vasco da Gama",
+      "Baga"
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "cities": [
+      "Spiti Valley",
+      "Dharamshala",
+      "Manali",
+      "Kullu",
+      "Shimla",
+      "Chamba"
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "cities": [
+      "Dehradun",
+      "Mussoorie",
+      "Nainital",
+      "Haridwar",
+      "Rishikesh"
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "cities": [
+      "Khajuraho",
+      "Bhopal",
+      "Indore",
+      "Gwalior",
+      "Ujjain"
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "cities": [
+      "Kolkata",
+      "Darjeeling",
+      "Sundarbans",
+      "Kalimpong",
+      "Shantiniketan"
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "cities": [
+      "Ahmedabad",
+      "Gir National Park",
+      "Dwarka",
+      "Somnath",
+      "Rann of Kutch"
+    ]
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "cities": [
+      "Srinagar",
+      "Gulmarg",
+      "Pahalgam",
+      "Leh",
+      "Sonmarg"
+    ]
+  },
+  {
+    "state": "Punjab",
+    "cities": [
+      "Amritsar",
+      "Chandigarh",
+      "Ropar",
+      "Jalandhar",
+      "Ludhiana",
+      "Patiala",
+      "Bathinda"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "cities": [
+      "Visakhapatnam",
+      "Tirupati",
+      "Araku Valley",
+      "Vijayawada",
+      "Lepakshi"
+    ]
+  },
+  {
+    "state": "Odisha",
+    "cities": [
+      "Puri",
+      "Konark",
+      "Bhubaneswar",
+      "Chilika Lake",
+      "Cuttack"
+    ]
+  },
+  {
+    "state": "Assam",
+    "cities": [
+      "Guwahati",
+      "Kaziranga National Park",
+      "Majuli",
+      "Tezpur",
+      "Sivasagar"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "cities": [
+      "Hyderabad",
+      "Warangal",
+      "Nagarjuna Sagar",
+      "Bhongir Fort",
+      "Medak"
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "cities": [
+      "Raipur",
+      "Jagdalpur",
+      "Chitrakote Falls",
+      "Barnawapara",
+      "Sirpur"
+    ]
+  }
+]
