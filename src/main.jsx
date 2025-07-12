@@ -11,7 +11,7 @@ import About from './Pages/About.jsx'
 import Login from './Pages/Login.jsx'
 import SignIn from './Pages/SignIn.jsx'
 import HotelDetail from './Pages/HotelDetail.jsx'
-import TrainData from './pages/TrainData.jsx'
+import TrainData from './Pages/TrainData.jsx'
 
 createRoot(document.getElementById('root')).render(
 
