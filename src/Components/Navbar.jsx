@@ -2,7 +2,6 @@ import {useState,useEffect} from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import logo from '../assets/logo2.png'
-import Searchbar from './Searchbar'
 
 const Navbar = () => {
     const [isOpen, setisOpen]=useState(false)
