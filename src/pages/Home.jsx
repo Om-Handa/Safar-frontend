@@ -6,8 +6,10 @@ import { NavLink, useLocation } from 'react-router-dom'
 function Home() {
     return (
         <>
-            <div style={{ backgroundImage: "url('https://www.heritagedaily.com/wp-content/uploads/2017/05/16279740174_9d932bdf6d_k-scaled.jpg')",backgroundSize: "cover",
-        backgroundPosition: "center", }} className=" text-white rounded-l h-[80vh] md:h-screen bg-cover w-screen flexad flex-col gap-20 ">
+            <div style={{
+                backgroundImage: "url('https://www.heritagedaily.com/wp-content/uploads/2017/05/16279740174_9d932bdf6d_k-scaled.jpg')", backgroundSize: "cover",
+                backgroundPosition: "center",
+            }} className=" text-white rounded-l h-[80vh] md:h-screen bg-cover w-screen flexad flex-col gap-20 ">
                 <div className='flexad flex-col '>
                     <p className='text-6xl font-bold text-center'>WELCOME TO SAFAR</p>
                     <p className='text-2xl font-bold text-center' >EXPLORE INDIA WITH NO SUFFER</p>
@@ -24,22 +26,34 @@ function Home() {
                     <div className="images flexad flex-col w-full gap-5">
 
                         <div className="1 flex flex-col md:flex-row w-full gap-5">
-                            <NavLink to='/HotelData' state={{ city: 'AGRA' }} className='bg-[url(https://storyateverycorner.com/wp-content/uploads/2023/12/Taj-Mahal-at-sunrise-4-1024x585-1024x585.jpeg)] bg-cover bg-no-repeat md:w-3/5 h-65 rounded-3xl flex flex-col justify-end items-end pr-5'>
+                            <NavLink to='/HotelData' state={{ city: 'AGRA' }} style={{
+                                backgroundImage: "url('https://storyateverycorner.com/wp-content/uploads/2023/12/Taj-Mahal-at-sunrise-4-1024x585-1024x585.jpeg')", backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }} className='bg-no-repeat md:w-3/5 h-65 rounded-3xl flex flex-col justify-end items-end pr-5'>
                                 <p className='text-3xl text-white font-bold pl-3'>Taj Mahal</p>
                                 <p className='text-xl text-white font-bold pl-3'>Agra, Uttar Pradesh</p>
                             </NavLink>
-                            <NavLink to='/HotelData' state={{ city: 'DELHI' }} className='bg-[url(https://vagatrip.com/storage/blogs/April2023/cover-10.jpg)] bg-cover bg-no-repeat md:w-2/5 h-65 rounded-3xl flex flex-col justify-end items-end pr-5'>
+                            <NavLink to='/HotelData' state={{ city: 'DELHI' }} style={{
+                                backgroundImage: "url('https://vagatrip.com/storage/blogs/April2023/cover-10.jpg')", backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }} className=' bg-no-repeat md:w-2/5 h-65 rounded-3xl flex flex-col justify-end items-end pr-5'>
                                 <p className='text-3xl text-white font-bold pl-3'>India Gate</p>
                                 <p className='text-xl text-white font-bold pl-3'>Delhi</p>
                             </NavLink>
                         </div>
 
                         <div className="2 flex w-full flex-col md:flex-row gap-5">
-                            <NavLink to='/HotelData' state={{ city: 'AMRITSAR' }} className='bg-[url(https://housing.com/news/wp-content/uploads/2022/11/Famous-tourist-places-in-India-state-compressed.jpg)] bg-cover bg-no-repeat md:w-2/5 h-65 rounded-3xl flex flex-col justify-end'>
+                            <NavLink to='/HotelData' state={{ city: 'AMRITSAR' }} style={{
+                                backgroundImage: "url('https://housing.com/news/wp-content/uploads/2022/11/Famous-tourist-places-in-India-state-compressed.jpg')", backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }} className=' bg-no-repeat md:w-2/5 h-65 rounded-3xl flex flex-col justify-end'>
                                 <p className='text-3xl text-white font-bold pl-3'>Golden Temple</p>
                                 <p className='text-xl text-white font-bold pl-3'>Amritsar, Punjab</p>
                             </NavLink>
-                            <NavLink to='/HotelData' state={{ city: 'HAMPI' }} className='bg-[url(https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg)] bg-cover md:w-3/5 h-65 rounded-3xl flex flex-col justify-end'>
+                            <NavLink to='/HotelData' state={{ city: 'HAMPI' }} style={{
+                                backgroundImage: "url('https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg')", backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }} className=' md:w-3/5 h-65 rounded-3xl flex flex-col justify-end'>
                                 <p className='text-3xl text-white font-bold pl-3'>Hampi</p>
                                 <p className='text-xl text-white font-bold pl-3'>Karnataka</p>
                             </NavLink>
