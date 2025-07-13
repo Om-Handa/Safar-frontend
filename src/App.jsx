@@ -1,7 +1,7 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
-import Navbar from './Components/Navbar.jsx'
-import Footer from './Components/Footer.jsx'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -18,4 +18,3 @@ function App() {
 }
 
 export default App
-// #f2ede6

@@ -1,6 +1,6 @@
 import logo from "../assets/LOGO.png"
 import me from "../assets/me.png"
-import Cards from '../Components/Cards.jsx'
+import Cards from '../Components/Cards'
 import { useEffect } from "react"
 
 function About() {

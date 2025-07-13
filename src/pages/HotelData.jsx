@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Searchbar from "../Components/Searchbar";
 import { useLocation } from "react-router-dom";
-import Hotels from '../Components/Hotels.jsx'
+import Hotels from '../Components/Hotels'
 
 function HotelData() {
     useEffect(() => {
