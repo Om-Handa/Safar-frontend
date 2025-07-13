@@ -4,8 +4,8 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 
 
 const Searchbar = () => {
-    const location =useLocation()
-    const isHome=location.pathname==='/'
+    const location = useLocation()
+    const isHome = location.pathname === '/'
     const [city, setcity] = useState("")
     const [cities, setCities] = useState([])
     const [suggestions, setsuggestions] = useState([])
@@ -34,28 +34,53 @@ const Searchbar = () => {
         }
     }
 
-    return (<div className="text-blue-500">Searchbar loaded!</div>
-        // <div className={`w-ful
-        // l flexad ${isHome?" ":"h-1/2 py-7 bg-amber-950"}`}>
-        //     <div className=' flex relative items-center justify-center gap-3 md:justify-around rounded-full backdrop-blur-md shadow-md h-10 bg-white/10 w-11/12 md:w-2/4'> 
+    return (
+        <div className={`w-full flexad ${isHome ? "" : "h-1/2 py-7 bg-amber-950"}`}>
+            <div className="flex relative items-center justify-center gap-3 md:justify-around rounded-full backdrop-blur-md shadow-md h-10 bg-white/10 w-11/12 md:w-2/4">
 
-        //         <div className='flex items-center justify-center md:justify-around w-full h-full'>
-        //             <input type="text" className="md:w-4/5 w-full border h-4/5 px-2 " placeholder='Search Hotels- Enter City Name' value={city} onChange={handleChange} />
-        //             <ul className='absolute top-full left-25 max-h-40 overflow-y-auto z-10 bg-white text-black w-3/5 flexad flex-col'>
-        //                 {suggestions.map((loc, index) => {
-        //                     return <li key={index} className='p-2 border w-full text-center' onClick={() => {
-        //                         setcity(loc)
-        //                         setsuggestions([])
-        //                     }}>{loc}</li>
-        //                 })}
-        //             </ul>
-        //         </div>
-        //         <NavLink to="/HotelData" state={{ city }} className="bg-white text-black font-bold h-[90%] md:w-2/5 flexad w-1/2 rounded-full">
-        //         {isHome?<button disabled={city.length <= 2} className="px-6 py-2 text-sm"> SEARCH HOTELS</button>:<button disabled={city.length <= 2} className="px-6 py-2 text-sm"> SEARCH</button>}
-        //         </NavLink>
+                <div className="flex items-center justify-center md:justify-around w-full h-full relative">
+                    <input
+                        type="text"
+                        className="md:w-4/5 w-full border h-4/5 px-2"
+                        placeholder="Search Hotels - Enter City Name"
+                        value={city}
+                        onChange={handleChange}
+                    />
 
-        //     </div>
-        // </div>
+                    {suggestions.length > 0 && (
+                        <ul className="absolute top-full left-0 max-h-40 overflow-y-auto z-10 bg-white text-black w-full border">
+                            {suggestions.map((loc, index) => (
+                                <li
+                                    key={index}
+                                    className="p-2 border-b w-full text-center cursor-pointer hover:bg-gray-100"
+                                    onClick={() => {
+                                        setcity(loc);
+                                        setsuggestions([]);
+                                    }}
+                                >
+                                    {loc}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </div>
+
+                <NavLink
+                    to="/HotelData"
+                    state={{ city }}
+                    className="bg-white text-black font-bold h-[90%] md:w-2/5 w-1/2 flexad rounded-full"
+                >
+                    <button
+                        disabled={city.length <= 2}
+                        className="px-6 py-2 text-sm disabled:opacity-50"
+                    >
+                        {isHome ? "SEARCH HOTELS" : "SEARCH"}
+                    </button>
+                </NavLink>
+
+            </div>
+        </div>
+
     )
 }
 
