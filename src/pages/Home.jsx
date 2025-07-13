@@ -63,9 +63,9 @@ function Home() {
             </div >
 
             <div id="Services" className='w-full flexad flex-col mb-20'>
-                <p className='text-5xl font-bold ml-24 w-[80%]'>Our Services</p>
+                <p className='text-5xl font-bold md:ml-24 w-[80%] mb-3 flex items-center justify-center md:justify-start'>Our Services</p>
                 <div className="w-[90%] flexad flex-col md:flex-row gap-10 mb-10">
-                    <NavLink to="/HotelData" state={{ city: "'?'" }} className="md:w-2/5 flexad flex-col h-3/5 shadow rounded-2xl">
+                    <NavLink to="/HotelData" state={{ city: "?" }} className="md:w-2/5 flexad flex-col h-3/5 shadow rounded-2xl">
                         <Cards src="https://www.kayak.co.in/rimg/dimg/dynamic/76/2023/08/eef8369398e2d8ac1191ee20223f219f.webp" Title="Hotels" Desc="Planning a trip? Let Safar take care of your stay. Whether you're exploring the bustling streets of Mumbai, the serene landscapes of Himachal, or the beaches of Goa – we’ve got a hotel for every traveler." />
                     </NavLink>
 
