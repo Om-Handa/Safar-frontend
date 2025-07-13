@@ -36,6 +36,7 @@
 //   </StrictMode>
 // );
 import React from 'react';
+import Navbar from './Components/Navbar';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
