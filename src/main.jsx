@@ -5,8 +5,7 @@ import App from './App.jsx';
 import {
   HashRouter,
   Routes,
-  Route,
-  BrowserRouter
+  Route
 } from 'react-router-dom';
 
 import Home from './pages/Home.jsx';
@@ -20,7 +19,7 @@ import TrainData from './pages/TrainData.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -33,6 +32,6 @@ createRoot(document.getElementById('root')).render(
           <Route path="/HotelDetail" element={<HotelDetail />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

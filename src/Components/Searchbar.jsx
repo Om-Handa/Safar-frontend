@@ -39,43 +39,18 @@ const Searchbar = () => {
             <div className="flex relative items-center justify-center gap-3 md:justify-around rounded-full backdrop-blur-md shadow-md h-10 bg-white/10 w-11/12 md:w-2/4">
 
                 <div className="flex items-center justify-center md:justify-around w-full h-full relative">
-                    <input
-                        type="text"
-                        className="md:w-4/5 w-full border h-4/5 px-2"
-                        placeholder="Search Hotels - Enter City Name"
-                        value={city}
-                        onChange={handleChange}
-                    />
+                    <input type="text" className="md:w-4/5 w-full border h-4/5 px-2" placeholder="Search Hotels - Enter City Name" value={city} onChange={handleChange} />
 
                     {suggestions.length > 0 && (
                         <ul className="absolute top-full left-0 max-h-40 overflow-y-auto z-10 bg-white text-black w-full border">
                             {suggestions.map((loc, index) => (
-                                <li
-                                    key={index}
-                                    className="p-2 border-b w-full text-center cursor-pointer hover:bg-gray-100"
-                                    onClick={() => {
-                                        setcity(loc);
-                                        setsuggestions([]);
-                                    }}
-                                >
-                                    {loc}
-                                </li>
+                                <li key={index} className="p-2 border-b w-full text-center cursor-pointer hover:bg-gray-100" onClick={() => { setcity(loc); setsuggestions([]); }}>{loc}</li>
                             ))}
-                        </ul>
-                    )}
+                        </ul>)}
                 </div>
 
-                <NavLink
-                    to="/HotelData"
-                    state={{ city }}
-                    className="bg-white text-black font-bold h-[90%] md:w-2/5 w-1/2 flexad rounded-full"
-                >
-                    <button
-                        disabled={city.length <= 2}
-                        className="px-6 py-2 text-sm disabled:opacity-50"
-                    >
-                        {isHome ? "SEARCH HOTELS" : "SEARCH"}
-                    </button>
+                <NavLink to="/HotelData" state={{ city }} className="bg-white text-black font-bold h-[90%] md:w-2/5 w-1/2 flexad rounded-full">
+                    <button disabled={city.length <= 2} className="px-6 py-2 text-sm disabled:opacity-50 flexad">{isHome ? "SEARCH HOTELS" : "SEARCH"}</button>
                 </NavLink>
 
             </div>
