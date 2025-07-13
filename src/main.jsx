@@ -48,7 +48,7 @@ function App() {
     <>
       <h1 className="text-3xl">Navbar (Hardcoded)</h1>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<><Navbar/><Home /></>} />
       </Routes>
     </>
   );
