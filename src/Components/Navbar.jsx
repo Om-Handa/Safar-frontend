@@ -16,7 +16,7 @@ const Navbar = () => {
                     <NavLink to="/"><img src={logo} className='h-12'></img></NavLink>
                     
                     <div className='flex space-x-10'>
-                        <ul className={`md:rounded-full gap-6 px-6 md:py-2 flexad flex-col md:flex-row absolute md:static md:bg-white/10 md:backdrop-blur-md top-full left-0 bg-amber-950 md:shadow-md w-full transition-all duration-300 md:text-lg text-xl ease-in-out overflow-hidden ${isOpen?"max-h-96 py-4 ":"max-h-0 md:max-h-none py-0 opacity-0 md:py-0 md:opacity-100"}`}>
+                       <ul className={`md:rounded-full gap-6 px-6 md:py-2 flexad flex-col md:flex-row absolute md:static md:bg-white/10 md:backdrop-blur-md top-full left-0 bg-amber-950 md:shadow-md w-full transition-all duration-300 md:text-lg text-xl ease-in-out overflow-hidden ${isOpen ? "nav-visible" : "nav-hidden"}`}>
                             <li><NavLink to="/" onClick={()=>setisOpen(!isOpen)}>Home</NavLink></li>
                             <li><HashLink smooth to="/#Tours" onClick={()=>setisOpen(!isOpen)}>Tour</HashLink></li>
                             <li><HashLink smooth to="/#Services" onClick={()=>setisOpen(!isOpen)}>Services</HashLink></li>

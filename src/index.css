@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 .flexad{
     @apply flex justify-center items-center;
 }
@@ -8,4 +7,18 @@
 body{
     height: 100%;
     width:100%
+}
+.nav-visible {
+  @apply max-h-96 py-4 opacity-100;
+}
+
+.nav-hidden {
+  @apply max-h-0 py-0 opacity-0;
+}
+
+@media (min-width: 768px) {
+  .nav-visible,
+  .nav-hidden {
+    @apply max-h-none py-0 opacity-100 !important;
+  }
 }
