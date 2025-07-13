@@ -19,6 +19,6 @@ body{
 @media (min-width: 768px) {
   .nav-visible,
   .nav-hidden {
-    @apply max-h-none py-0 opacity-100 !important;
+    @apply max-h-none py-0 opacity-100 ;
   }
 }
