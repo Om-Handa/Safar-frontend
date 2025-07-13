@@ -23,13 +23,13 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="HotelData" element={<HotelData />} />
-          <Route path="TrainData" element={<TrainData />} />
-          <Route path="ContactUs" element={<ContactUs />} />
-          <Route path="About" element={<About />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="SignIn" element={<SignIn />} />
-          <Route path="HotelDetail" element={<HotelDetail />} />
+          <Route path="/HotelData" element={<HotelData />} />
+          <Route path="/TrainData" element={<TrainData />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/HotelDetail" element={<HotelDetail />} />
         </Route>
       </Routes>
     </HashRouter>
