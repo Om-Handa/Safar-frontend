@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Searchbar from "../Components/Searchbar";
+import Searchbar from "../Components/Searchbar.jsx";
 import { useLocation } from "react-router-dom";
 import star1 from "../assets/star1.png"
 import star2 from "../assets/star2.png"
