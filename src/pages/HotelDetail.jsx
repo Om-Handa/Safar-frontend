@@ -1,32 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Searchbar from "../Components/Searchbar";
 import { useLocation } from "react-router-dom";
-import star1 from "../assets/star1.png"
-import star2 from "../assets/star2.png"
-import star3 from "../assets/star3.png"
-import star4 from "../assets/star4.png"
-import star5 from "../assets/star5.png"
+import { FaStar } from "react-icons/fa";
 
 function HotelDetail() {
     const { state } = useLocation();
     const detail = state?.hoteldetail;
-    const handleReview = () => {
-        const reviewcal = Math.round((detail?.reviewScore || 1) / 2);
-        switch (reviewcal) {
-            case 1:
-                return <img src={star1} alt="1 star" className="h-auto w-1/2" />;
-            case 2:
-                return <img src={star2} alt="1 star" className="h-auto w-1/2" />;
-            case 3:
-                return <img src={star3} alt="1 star" className="h-auto w-1/2" />;
-            case 4:
-                return <img src={star4} alt="1 star" className="h-auto w-1/2" />;
-            case 5:
-                return <img src={star5} alt="1 star" className="h-auto w-1/2" />;
-            default:
-                return "No Rating"
-        }
-    }
+    const reviewcal = Math.round((detail?.reviewScore) / 2);
     const getHighQualityImage = (url) => {
         return url.replace("square60", "max1024");
     };
@@ -52,14 +32,19 @@ function HotelDetail() {
                         <div className="w-full h-2/6 flex flex-col md:flex-row">
                             <div className="md:w-1/2">
                                 <div className="h-1/2 p-3 w-full text-2xl font-bold">Gross Price: ₹ {detail?.priceBreakdown?.grossPrice?.value.toLocaleString()}</div>
-                                <div className="h-1/2 p-3 w-full text-2xl font-bold">Rating: {detail.reviewScore}</div>
+                                <div className="h-1/2 p-3 w-full text-2xl font-bold">Rating: {detail.reviewScore}/10</div>
                             </div>
                             <div className="md:w-1/2 flexad">
-                                <button className="bg-amber-950 w-3/4 md:w-auto text-white p-5 rounded-full text-2xl font-bold">Book Room</button>
+                                <a href="https://www.trivago.com/" target="_blank" className="w-11/12 "><button className="bg-amber-900 text-white p-3 md:p-5 w-full rounded-full text-2xl font-bold">Book Room</button></a>
                             </div>
                         </div>
-
-                        <div className=" h-1/6 md:h-1/6 p-3 w-full text-2xl font-bold flexad">{handleReview()}</div>
+                        <div className="h-1/6 flexad">
+                            <div className="flexad w-full h-full">
+                                {[...Array(5)].map((_, index) => (
+                                    <FaStar key={index} className={index < reviewcal ? "text-yellow-400 text-4xl md:my-0 my-3" : "text-gray-300 text-4xl md:my-0 my-3"}/>
+                                ))}
+                            </div>
+                        </div>
 
                     </div>
                 </div>

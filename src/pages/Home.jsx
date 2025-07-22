@@ -7,12 +7,12 @@ function Home() {
     return (
         <>
             <div style={{
-                backgroundImage: "url('https://www.heritagedaily.com/wp-content/uploads/2017/05/16279740174_9d932bdf6d_k-scaled.jpg')", backgroundSize: "cover",
+                backgroundImage: "url('https://www.ghumindiaghum.com/blog/wp-content/uploads/2023/06/Kerala-Tourism.jpg')", backgroundSize: "cover",
                 backgroundPosition: "center",
             }} className=" text-white rounded-l h-[80vh] md:h-screen bg-cover w-screen flexad flex-col gap-20 ">
                 <div className='flexad flex-col '>
-                    <p className='text-6xl font-bold text-center'>WELCOME TO SAFAR</p>
-                    <p className='text-2xl font-bold text-center' >EXPLORE INDIA WITH NO SUFFER</p>
+                    <p className='md:text-7xl text-5xl font-bold text-center'>WELCOME TO SAFAR</p>
+                    <p className='md:text-3xl text-xl font-bold text-center' >EXPLORE INDIA WITH NO SUFFER</p>
                 </div>
                 <Searchbar />
             </div>

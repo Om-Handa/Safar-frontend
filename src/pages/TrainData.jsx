@@ -34,12 +34,12 @@ function TrainData() {
 
                     <input type="date" placeholder='Date' className="w-1/3 md:w-1/4 border-black border h-1/4 px-2 text-[#5c737f] invert-100" onChange={handleChangedate} />
 
-                    <NavLink to="/TrainData" className="bg-white h-1/4 text-black font-bold w-1/3 md:w-1/4 flexad w-1/2 ">
+                    <NavLink to="/TrainData" className="bg-white h-1/4 text-black md:font-bold w-1/3 md:w-1/4 flexad w-1/2 ">
                         <button className="text-sm" onClick={()=>setShowRender(!showRender)}> SEARCH TRAINS</button>
                     </NavLink>
                 </div>
             </nav>
-            <main className="w-full h-auto my-10 flexad flex-col gap-5 ">
+            <main className="w-full min-h-[60vh] my-10 flexad flex-col gap-5 ">
                 {!showRender?<p className="text-3xl font-bold text-red-600">"No Trains To Show"</p>: <Trains city1={city1} city2={city2} date={date}/>}
             </main>
         </div>

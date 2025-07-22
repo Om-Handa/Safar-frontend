@@ -13,7 +13,7 @@ const Trains = (props) => {
     <>
       {trainData.map((train, index) => {
         return (
-          <div key={index} className="md:w-3/4 w-full h-72 border rounded-xl">
+          <div key={index} className="md:w-3/4 w-full h-80 md:h-72 border rounded-xl">
 
             <div className="px-5 w-full h-1/6 flex items-center bg-[#bfbba9] rounded-t-xl">
               <p className="md:w-5/12 text-2xl font-bold">{train.Name}</p>
@@ -21,16 +21,16 @@ const Trains = (props) => {
             </div>
 
             <div className="w-full h-1/5 flex items-center justify-between px-5">
-              <p className="md:text-xl font-semibold flex flex-col">
-                <span className="font-bold text-xl md:text-2xl md:mt-0 mt-2 md:border-r-2">{train.time1} </span>
+              <p className="md:text-xl font-semibold flex md:flex-row flex-col">
+                <span className="font-bold text-xl md:text-2xl md:mt-0 mt-2 pr-2 md:border-r-2">{train.time1} </span>
                 <span className='md:px-1.5 md:border-r-2'>{props.city1.toUpperCase()}</span>
                 <span className='md:pl-1.5'>{props.date}</span>
               </p>
 
               <p className="md:text-xl self-start">----{train.time}----</p>
 
-              <p className="md:text-xl font-semibold flex flex-col">
-                <span className="font-bold text-xl md:text-2xl md:mt-0 mt-2 md:border-r-2">{train.time2} </span>
+              <p className="md:text-xl font-semibold flex md:flex-row flex-col">
+                <span className="font-bold text-xl md:text-2xl md:mt-0 mt-2 pr-2 md:border-r-2">{train.time2} </span>
                 <span className='md:px-1.5 md:border-r-2'>{props.city2.toUpperCase()}</span>
                 <span className='md:pl-1.5'>{props.date}</span>
               </p>
